@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.DriveIncreasedFootTrafficController">
+   <children>
+      <Label layoutX="86.0" layoutY="108.0" text="Campaign Name" />
+      <Label layoutX="78.0" layoutY="294.0" text="Promotion End Date" />
+      <Label layoutX="366.0" layoutY="43.0" text="President">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="143.0" text="Campaign Type" />
+      <Label layoutX="77.0" layoutY="337.0" text="Promotional Content" />
+      <Label layoutX="87.0" layoutY="194.0" text="Target Audience" />
+      <Label layoutX="75.0" layoutY="246.0" text="Promotion Start Date" />
+      <TextField fx:id="CampaignNameTextField" layoutX="205.0" layoutY="104.0" />
+      <ComboBox fx:id="CampaignTypeComboBox" layoutX="205.0" layoutY="139.0" prefWidth="150.0" />
+      <ComboBox fx:id="TargetAudienceComboBox" layoutX="205.0" layoutY="190.0" prefWidth="150.0" />
+      <DatePicker fx:id="PromotionStartDateDatePicker" layoutX="205.0" layoutY="242.0" />
+      <DatePicker fx:id="PromotionEndDateDatePicker" layoutX="197.0" layoutY="290.0" />
+      <TextField fx:id="PromotionalContentTextField" layoutX="218.0" layoutY="332.0" />
+      <Label layoutX="448.0" layoutY="110.0" text="Status" />
+      <ComboBox fx:id="StatusComboBox" layoutX="500.0" layoutY="105.0" prefWidth="150.0" />
+      <TableView layoutX="9.0" layoutY="413.0" prefHeight="200.0" prefWidth="829.0">
+        <columns>
+          <TableColumn fx:id="CampaignNameTableColumn" prefWidth="144.0" text="Campaign Name" />
+          <TableColumn fx:id="CampaignTypeTableColumn" prefWidth="124.0" text="Campaign Type" />
+            <TableColumn fx:id="TargetAudienceTableColumn" prefWidth="105.0" text="Target Audience" />
+            <TableColumn fx:id="PromotionStartDateTableColumn" prefWidth="126.0" text="Promotion Start Date" />
+            <TableColumn fx:id="PromotionEndDateTableColumn" prefWidth="128.0" text="Promotion End Date" />
+            <TableColumn fx:id="PromotionalContentTableColumn" prefWidth="129.0" text="Promotional Content" />
+            <TableColumn fx:id="StatusTableColumn" prefWidth="72.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="GenerateButton" layoutX="633.0" layoutY="320.0" mnemonicParsing="false" onAction="#GenerateButtonOnActrion" text="Generate" />
+   </children>
+</AnchorPane>
