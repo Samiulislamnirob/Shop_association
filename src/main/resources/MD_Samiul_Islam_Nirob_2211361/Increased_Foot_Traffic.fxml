@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="687.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MD_Samiul_Islam_Nirob_2211361.NcreasedFootTraffic">
+   <children>
+      <Label layoutX="207.0" layoutY="34.0" text="Increased Foot Traffic to the Mall">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="127.0" text="User Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="165.0" />
+      <Label layoutX="43.0" layoutY="276.0" prefHeight="20.0" prefWidth="138.0" text="Preferred Catgories">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="164.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserNameTextField" layoutX="207.0" layoutY="124.0" prefHeight="26.0" prefWidth="328.0" />
+      <TextField fx:id="PasswordTextField" layoutX="207.0" layoutY="160.0" prefHeight="26.0" prefWidth="259.0" />
+      <Button layoutX="487.0" layoutY="161.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <RadioButton layoutX="74.0" layoutY="315.0" mnemonicParsing="false" text="Clothing" />
+      <RadioButton layoutX="71.0" layoutY="348.0" mnemonicParsing="false" text="Electronics" />
+      <RadioButton layoutX="71.0" layoutY="379.0" mnemonicParsing="false" text="Home" />
+      <RadioButton layoutX="71.0" layoutY="415.0" mnemonicParsing="false" text="toys" />
+      <Label layoutX="359.0" layoutY="379.0" prefHeight="17.0" prefWidth="163.0" text="User eeligible for Promotions:" />
+      <RadioButton layoutX="541.0" layoutY="379.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton layoutX="544.0" layoutY="415.0" mnemonicParsing="false" text="No" />
+      <Label layoutX="285.0" layoutY="278.0" prefHeight="17.0" prefWidth="196.0" text="At Least One category Selected:" />
+      <TextArea fx:id="categorySelectedTextArea" layoutX="541.0" layoutY="280.0" prefHeight="85.0" prefWidth="200.0" />
+      <TableView layoutX="81.0" layoutY="473.0" prefHeight="200.0" prefWidth="611.0">
+        <columns>
+          <TableColumn prefWidth="186.0" text="C1" />
+          <TableColumn prefWidth="191.0" text="C2" />
+            <TableColumn prefWidth="233.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
