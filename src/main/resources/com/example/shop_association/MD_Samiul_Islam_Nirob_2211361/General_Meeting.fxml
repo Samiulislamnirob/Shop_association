@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="749.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MD_Samiul_Islam_Nirob_2211361.GeneralMeeting">
+<AnchorPane prefHeight="749.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.GeneralMeeting">
    <children>
       <Label layoutX="393.0" layoutY="76.0" prefHeight="17.0" prefWidth="82.0" text="Participant List" />
       <Label layoutX="68.0" layoutY="75.0" text="Meeting Title" />

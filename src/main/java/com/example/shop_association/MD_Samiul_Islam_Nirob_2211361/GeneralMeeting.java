@@ -1,3 +1,8 @@
+package com.example.shop_association.MD_Samiul_Islam_Nirob_2211361;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class GeneralMeeting
 {
     @javafx.fxml.FXML

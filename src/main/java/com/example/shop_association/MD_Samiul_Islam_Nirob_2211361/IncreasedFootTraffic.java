@@ -1,4 +1,10 @@
-public class NcreasedFootTraffic
+package com.example.shop_association.MD_Samiul_Islam_Nirob_2211361;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
+public class IncreasedFootTraffic
 {
     @javafx.fxml.FXML
     private TextArea categorySelectedTextArea;
@@ -12,6 +18,6 @@ public class NcreasedFootTraffic
     }
 
     @javafx.fxml.FXML
-    public void OnActionLogin(ActionEvent actionEvent) {
+    public void Login(ActionEvent actionEvent) {
     }
 }

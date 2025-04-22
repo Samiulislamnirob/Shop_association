@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="687.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MD_Samiul_Islam_Nirob_2211361.NcreasedFootTraffic">
+<AnchorPane prefHeight="687.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.IncreasedFootTraffic">
    <children>
       <Label layoutX="207.0" layoutY="34.0" text="Increased Foot Traffic to the Mall">
          <font>

@@ -1,3 +1,11 @@
+package com.example.shop_association.MD_Samiul_Islam_Nirob_2211361;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class EventRegistrations
 {
     @javafx.fxml.FXML
@@ -17,18 +25,6 @@ public class EventRegistrations
 
     @javafx.fxml.FXML
     public void initialize() {
-    }
-
-    @Deprecated
-    public void saveOnAction_Button(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void OnActionNoRadioButton(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void OnActionPublicRadioButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
