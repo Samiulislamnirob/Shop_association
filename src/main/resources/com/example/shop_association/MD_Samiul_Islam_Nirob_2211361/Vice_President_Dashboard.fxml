@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="717.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.VicePresidentDashboard">
+   <children>
+      <Button layoutX="66.0" layoutY="110.0" mnemonicParsing="false" onAction="#MeetingWithPresidentButton" text="Meeting With President" />
+      <Button layoutX="649.0" layoutY="181.0" mnemonicParsing="false" onAction="#NewMemberApplicationButton" text="New Member Application" />
+      <Button layoutX="649.0" layoutY="97.0" mnemonicParsing="false" onAction="#EventDashboardButton" text="Event Dashboard" />
+      <Button layoutX="66.0" layoutY="181.0" mnemonicParsing="false" onAction="#EmergencyPlanModuleButton" text="Emergency Plan Module" />
+      <Button layoutX="69.0" layoutY="251.0" mnemonicParsing="false" onAction="#BudgetReportButton" text="Budget Report" />
+      <Button layoutX="66.0" layoutY="320.0" mnemonicParsing="false" onAction="#MarketingReportButton" text="Marketing Report" />
+      <Button layoutX="649.0" layoutY="326.0" mnemonicParsing="false" onAction="#VisitorSuggestionFormButton" text="Visitor Suggestion Form" />
+      <Button layoutX="385.0" layoutY="589.0" mnemonicParsing="false" onAction="#SignOutButton" text="SignOut" />
+      <Button layoutX="649.0" layoutY="251.0" mnemonicParsing="false" onAction="#ShopFeedbackFormButton" text="Shop Feedback Form" />
+      <Label layoutX="302.0" layoutY="44.0" text="Vice President">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

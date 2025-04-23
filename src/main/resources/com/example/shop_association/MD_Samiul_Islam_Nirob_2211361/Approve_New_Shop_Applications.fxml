@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="782.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.ApproveNewShopApplications">
    <children>
       <Label layoutX="42.0" layoutY="268.0" text="Shopumnents">
@@ -58,5 +57,6 @@
             <TableColumn fx:id="ShopRegistrationTableColumn" prefWidth="184.0" text="Shop Registration" />
         </columns>
       </TableView>
+      <Button layoutX="23.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
    </children>
 </AnchorPane>

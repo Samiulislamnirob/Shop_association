@@ -47,5 +47,6 @@
             <TableColumn fx:id="TransactionDetailsTableColumn" prefWidth="196.0" text="Transaction Details" />
         </columns>
       </TableView>
+      <Button layoutX="58.0" layoutY="42.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
    </children>
 </AnchorPane>

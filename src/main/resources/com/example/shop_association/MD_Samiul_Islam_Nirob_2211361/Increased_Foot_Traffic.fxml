@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="687.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.IncreasedFootTraffic">
    <children>
       <Label layoutX="207.0" layoutY="34.0" text="Increased Foot Traffic to the Mall">
@@ -53,5 +52,6 @@
             <TableColumn prefWidth="233.0" text="C2" />
         </columns>
       </TableView>
+      <Button layoutX="26.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
    </children>
 </AnchorPane>

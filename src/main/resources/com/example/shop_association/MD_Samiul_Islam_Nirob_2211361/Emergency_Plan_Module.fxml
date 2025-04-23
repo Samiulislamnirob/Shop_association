@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="640.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.EmergencyPlanModule">
    <children>
       <Label layoutX="255.0" layoutY="36.0" text="Emergency Scenario Details">
@@ -32,5 +31,6 @@
           <TableColumn fx:id="ScenarioTableColumn" prefWidth="225.0" text="Scenario" />
         </columns>
       </TableView>
+      <Button layoutX="56.0" layoutY="37.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
    </children>
 </AnchorPane>

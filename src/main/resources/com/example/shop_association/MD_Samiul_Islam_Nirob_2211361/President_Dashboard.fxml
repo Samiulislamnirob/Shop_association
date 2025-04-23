@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="734.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.PresidentDashboard">
+   <children>
+      <Button layoutX="135.0" layoutY="120.0" mnemonicParsing="false" onAction="#GeneralMeertingButton" text="General Meerting" />
+      <Button layoutX="135.0" layoutY="209.0" mnemonicParsing="false" onAction="#FinancialWithReportTreasurerButton" text="Financial Report With Treasurer" />
+      <Button layoutX="135.0" layoutY="318.0" mnemonicParsing="false" onAction="#FootTrafficToTheMallButton" text="Foot Traffic To The Mall" />
+      <Button layoutX="135.0" layoutY="460.0" mnemonicParsing="false" onAction="#IncreasedFootTrafficButton" text="Increased Foot Traffic" />
+      <Button layoutX="631.0" layoutY="460.0" mnemonicParsing="false" onAction="#CustomerFeedbackButton" text="Customer Feedback" />
+      <Button layoutX="631.0" layoutY="318.0" mnemonicParsing="false" onAction="#EventRegistrationButton" text="Event Registration" />
+      <Button layoutX="631.0" layoutY="209.0" mnemonicParsing="false" onAction="#ApproveNewShopApplicationButton" text="Approve New Shop Application" />
+      <Button layoutX="631.0" layoutY="120.0" mnemonicParsing="false" onAction="#MemberCommunicationButton" text="Member Communication" />
+      <Label layoutX="364.0" layoutY="43.0" text="President">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="364.0" layoutY="614.0" mnemonicParsing="false" onAction="#SignOutButton" text="SignOut" />
+   </children>
+</AnchorPane>

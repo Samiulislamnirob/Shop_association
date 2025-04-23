@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shop_association.MD_Samiul_Islam_Nirob_2211361.FootTrafficController">
    <children>
       <Label layoutX="86.0" layoutY="108.0" text="Campaign Name" />
@@ -44,5 +43,6 @@
         </columns>
       </TableView>
       <Button fx:id="GenerateButton" layoutX="633.0" layoutY="320.0" mnemonicParsing="false" onAction="#GenerateButtonOnActrion" text="Generate" />
+      <Button layoutX="62.0" layoutY="31.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
    </children>
 </AnchorPane>

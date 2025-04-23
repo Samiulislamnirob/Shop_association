@@ -1,46 +1,120 @@
 package com.example.shop_association.MD_Samiul_Islam_Nirob_2211361;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
-public class MemberCommunication
-{
-    @javafx.fxml.FXML
-    private TableColumn ValidationStatusTableColumn;
-    @javafx.fxml.FXML
-    private TextArea ReportIssueTextArea;
-    @javafx.fxml.FXML
+import java.io.IOException;
+
+public class MemberCommunication {
+
+    @FXML
     private TextField ViolationReportIDTextField;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TextArea ReportIssueTextArea;
+
+    @FXML
+    private ComboBox<String> ValidationStatusComboBox;
+
+    @FXML
     private TextArea AuditIssueTextArea;
-    @javafx.fxml.FXML
-    private ComboBox ValidationStatusComboBox;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<MemberCommunicationData, String> VatidationReportIDTableCloumn;
+
+    @FXML
+    private TableColumn<MemberCommunicationData, String> ReportissueTableColumn;
+
+    @FXML
+    private TableColumn<MemberCommunicationData, String> ValidationStatusTableColumn;
+
+    @FXML
+    private TableColumn<MemberCommunicationData, String> AuditNotesTableColumn;
+
+    private ObservableList<MemberCommunicationData> dataList = FXCollections.observableArrayList();
+
+    private String status = "Unresolved";  // Default status
+    @FXML
     private Button saveAuditButton;
-    @javafx.fxml.FXML
-    private TableColumn AuditNotesTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn ReportissueTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn VatidationReportIDTableCloumn;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        ValidationStatusComboBox.setItems(FXCollections.observableArrayList("Valid", "Invalid", "Pending"));
+
+        VatidationReportIDTableCloumn.setCellValueFactory(new PropertyValueFactory<>("violationReportID"));
+        ReportissueTableColumn.setCellValueFactory(new PropertyValueFactory<>("reportIssue"));
+        ValidationStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("validationStatus"));
+        AuditNotesTableColumn.setCellValueFactory(new PropertyValueFactory<>("auditNotes"));
+
+        tableView.setItems(dataList);
     }
 
-    @javafx.fxml.FXML
-    public void OnActionSaveAuditButton(ActionEvent actionEvent) {
+    @FXML
+    private void OnActionResolvedRadioButton() {
+        status = "Resolved";
     }
 
-    @javafx.fxml.FXML
-    public void OnAction_Inprocess_RadioButton(ActionEvent actionEvent) {
+    @FXML
+    private void OnActionUnResolvedRadioButton() {
+        status = "Unresolved";
     }
 
-    @javafx.fxml.FXML
-    public void OnActionUnResolvedRadioButton(ActionEvent actionEvent) {
+    @FXML
+    private void OnAction_Inprocess_RadioButton() {
+        status = "In Progress";
     }
 
-    @javafx.fxml.FXML
-    public void OnActionResolvedRadioButton(ActionEvent actionEvent) {
+    @FXML
+    private void OnActionSaveAuditButton() {
+        String id = ViolationReportIDTextField.getText().trim();
+        String issue = ReportIssueTextArea.getText().trim();
+        String validation = ValidationStatusComboBox.getValue();
+        String notes = AuditIssueTextArea.getText().trim();
+
+        if (id.isEmpty() || issue.isEmpty() || validation == null || notes.isEmpty()) {
+            showAlert("Error", "All fields must be filled!");
+            return;
+        }
+
+        MemberCommunicationData data = new MemberCommunicationData(id, issue, validation + " [" + status + "]", notes);
+        dataList.add(data);
+        clearForm();
+        showAlert("Success", "Audit details saved successfully!");
+    }
+
+    private void clearForm() {
+        ViolationReportIDTextField.clear();
+        ReportIssueTextArea.clear();
+        ValidationStatusComboBox.getSelectionModel().clearSelection();
+        AuditIssueTextArea.clear();
+        status = "Unresolved";  // Reset status
+    }
+
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
+
+    @FXML
+    public void BackButton(ActionEvent actionEvent) throws IOException {  Parent root = null ;
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PresidentDashboard.fxml"));
+        root = fxmlLoader.load();
+        Scene scene = new Scene(root) ;
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Create Account");
+        stage.show();
     }
 }
